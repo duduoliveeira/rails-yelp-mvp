@@ -1,0 +1,11 @@
+<h1 class='text-center'>All Reviews - <%= @restaurant.name %></h1>
+<div class='container m-3 justify-content-center'>
+    <% @reviews.each do |review| %>
+<div class="card d-inline bg-light mb-3" style="max-width: 18rem; max-height: 18rem;">
+  <div class="card-header">Rating: <%= review.rating %> Stars</div>
+      <div class="card-body">
+      <h5 class="card-title">Avaliation:</h5>
+    <p class="card-text"><%= review.content %></p>
+</div>
+</div>
+    <% end %>
