@@ -1,8 +1,8 @@
 <div class='container bg-light'>
 <h1>All Restaurants</h1>
-<ul>
+<ul class='list-group'>
 <% @restaurants.each do |restaurant| %>
-<li><%= link_to restaurant.name, restaurant, class: 'decoration-none' %></li>
+<li class='list-group-item'><%= link_to restaurant.name, restaurant, class: 'text-decoration-none text-black' %></li>
 <% end %>
 </ul>
 
